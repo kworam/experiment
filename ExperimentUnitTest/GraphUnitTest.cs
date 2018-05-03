@@ -140,7 +140,7 @@ namespace ExperimentUnitTest
 			Graph g = GetSimpleDAG();
 
 			IEnumerable<GraphTopologicalSortNode> topSort = GraphTopologicalSort.Sort(g);
-			Assert.AreEqual("A B C", string.Join(" ", topSort));
+			Assert.AreEqual("A:0 B:1 C:2", string.Join(" ", topSort));
 		}
 
 		[TestCategory("Graph"), TestMethod]
@@ -149,7 +149,7 @@ namespace ExperimentUnitTest
 			Graph g = GetComplexDAG();
 
 			IEnumerable<GraphTopologicalSortNode> topSort = GraphTopologicalSort.Sort(g);
-			Assert.AreEqual("A B G C D E F", string.Join(" ", topSort));
+			Assert.AreEqual("A:0 B:0 G:0 C:1 D:1 E:2 F:3", string.Join(" ", topSort));
 		}
 
 		private static Graph GetCyclicDirectedGraph()

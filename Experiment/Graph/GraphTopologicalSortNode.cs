@@ -8,7 +8,7 @@
 
 		public override string ToString()
 		{
-			return Vertex.ToString();
+			return string.Format("{0}:{1}", Vertex, Level);
 		}
 	}
 }
