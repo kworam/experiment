@@ -61,5 +61,34 @@ namespace ExperimentUnitTest.ExLinkedListUnitTest
 				ExLinkedList<int>.Reverse(ExLinkedList<int>.FromEnumerable(l)),
 				lReverse));
 		}
-	}
+
+        [TestMethod]
+        public void ReverseNullListIterative()
+        {
+            List<int> l = null;
+            Assert.IsTrue(ExLinkedList<int>.EqualsEnumerable(
+                ExLinkedList<int>.ReverseIterative(ExLinkedList<int>.FromEnumerable(l)),
+                l));
+        }
+
+        [TestMethod]
+        public void ReverseSingletonListIterative()
+        {
+            List<int> l = new List<int>() { 99 };
+            Assert.IsTrue(ExLinkedList<int>.EqualsEnumerable(
+                ExLinkedList<int>.ReverseIterative(ExLinkedList<int>.FromEnumerable(l)),
+                l));
+        }
+
+        [TestMethod]
+        public void ReverseListTwoOrMoreIterative()
+        {
+            List<int> l = new List<int>() { 99, 33, 23, 667 };
+            List<int> lReverse = new List<int>(l);
+            lReverse.Reverse();
+            Assert.IsTrue(ExLinkedList<int>.EqualsEnumerable(
+                ExLinkedList<int>.ReverseIterative(ExLinkedList<int>.FromEnumerable(l)),
+                lReverse));
+        }
+    }
 }

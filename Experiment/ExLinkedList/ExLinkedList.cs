@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using System.Net;
 
 namespace Experiment.ExLinkedList
 {
@@ -14,7 +15,28 @@ namespace Experiment.ExLinkedList
 			return InternalReverse(null, node);
 		}
 
-		public static Node<T> FromEnumerable(IEnumerable<T> enumerable)
+        public static Node<T> ReverseIterative(Node<T> node)
+        {
+            if (node == null)
+            {
+                return node;
+            }
+
+            Node<T> prev = null;
+            Node<T> current = node;
+            while (current != null)
+            {
+                Node<T> next = current.Next;
+                current.Next = prev;
+
+                prev = current;
+                current = next;
+            }
+
+            return prev;
+        }
+
+        public static Node<T> FromEnumerable(IEnumerable<T> enumerable)
 		{
 			if (enumerable == null)
 			{
@@ -94,6 +116,5 @@ namespace Experiment.ExLinkedList
 			current.Next = prev;
 			return InternalReverse(current, next);
 		}
-
 	}
 }
