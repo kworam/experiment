@@ -47,6 +47,8 @@
     <Compile Include="Graph\GraphTopologicalSort.cs" />
     <Compile Include="Graph\GraphTopologicalSortNode.cs" />
     <Compile Include="Graph\GraphType.cs" />
+    <Compile Include="ExLinkedList\ExLinkedList.cs" />
+    <Compile Include="ExLinkedList\Node.cs" />
     <Compile Include="Tree\IBst.cs" />
     <Compile Include="Tree\INode.cs" />
     <Compile Include="Tree\IVisitor.cs" />

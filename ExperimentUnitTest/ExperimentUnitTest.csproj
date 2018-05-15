@@ -52,6 +52,7 @@
   <ItemGroup>
     <Compile Include="ConsistentHashUnitTest.cs" />
     <Compile Include="Finbonacci\FibonacciUnitTest.cs" />
+    <Compile Include="ExLinkedList\ExLinkedListUnitTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="MinHeapUnitTest.cs" />
     <Compile Include="HeapSortUnitTest.cs" />
