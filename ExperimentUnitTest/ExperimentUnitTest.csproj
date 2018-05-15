@@ -58,6 +58,7 @@
     <Compile Include="QuickSortUnitTest.cs" />
     <Compile Include="PriorityQueueUnitTest.cs" />
     <Compile Include="GraphUnitTest.cs" />
+    <Compile Include="Tree\TreeUnitTest.cs" />
     <Compile Include="TrieUnitTest.cs" />
   </ItemGroup>
   <ItemGroup>

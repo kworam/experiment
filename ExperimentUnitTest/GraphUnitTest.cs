@@ -13,6 +13,7 @@ namespace ExperimentUnitTest
 		[TestCategory("Graph"), TestMethod]
 		public void EmptyGraph()
 		{
+            //bogus
 			Graph g = GraphFactory.CreateGraph();
 			Assert.AreEqual(g.NumVertices, 0);
 		}

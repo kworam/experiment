@@ -47,6 +47,13 @@
     <Compile Include="Graph\GraphTopologicalSort.cs" />
     <Compile Include="Graph\GraphTopologicalSortNode.cs" />
     <Compile Include="Graph\GraphType.cs" />
+    <Compile Include="Tree\IBst.cs" />
+    <Compile Include="Tree\INode.cs" />
+    <Compile Include="Tree\IVisitor.cs" />
+    <Compile Include="Tree\KevinBst.cs" />
+    <Compile Include="Tree\KevinNode.cs" />
+    <Compile Include="Tree\KeyNotFoundException.cs" />
+    <Compile Include="Tree\Traversal.cs" />
     <Compile Include="Trie\KevinTrie.cs" />
     <Compile Include="Trie\TraversalType.cs" />
     <Compile Include="Trie\Trie.cs" />
@@ -86,6 +93,7 @@
     <Compile Include="QuickSort\QuickSortKevinPartition.cs" />
     <Compile Include="QuickSort\QuickSortStatistics.cs" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
